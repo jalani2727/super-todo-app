@@ -78,7 +78,7 @@ function add(title) {
     return db.one("Insert into todos (title, isDone) values ('$1#', true) returning id", [title]);
 }
 
-add('todos')
+add('A muhfuckin title')
     .then((data) => { console.log(data); })
     .catch((error) => { console.log(error); });
 
