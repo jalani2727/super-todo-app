@@ -63,15 +63,29 @@ function setFinished(id, isDone) {
     return db.result('update todos set isDone=$1 where id=$2', [isDone, id]);
 }
 
-setFinished(6, true)
-    .then((data) => { console.log(data); })
-    .catch((error) => { console.log(error); });
-    
+// setFinished(6, true)
+//     .then((data) => { console.log(data); })
+//     .catch((error) => { console.log(error); });
+
+function setTitle(id, newTitle) {
+    return db.result("update todos set title='$1#' where id=$2", [newTitle, id]);
+}
+// setTitle(6, 'testicles')
+//     .then((data) => { console.log(data); })
+//     .catch((error) => { console.log(error); });
+
+function 
+
+
+
+
 module.exports = {
   getOne,
   getAll,
   getPending,
   getFinished,
   searchByTitle,
-  deleteById
+  deleteById,
+  setFinished,
+  setTitle
 };
