@@ -28,3 +28,9 @@ where title ilike '%your%';
 update todos
 set title = "delete your history"
 where id = 1;
+
+-- Delete some shit 
+delete from todos
+where isDone = true
+-- To see what you have left after deleting  
+select * from todos

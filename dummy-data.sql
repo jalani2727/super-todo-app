@@ -1,7 +1,5 @@
 -- good way to edit the database for testing 
 
-
-
 Insert into todos 
 	(title, isDone)
 values
