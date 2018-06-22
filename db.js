@@ -73,10 +73,14 @@ function setTitle(id, newTitle) {
 // setTitle(6, 'testicles')
 //     .then((data) => { console.log(data); })
 //     .catch((error) => { console.log(error); });
+ 
+function add(title) {
+    return db.one("Insert into todos (title, isDone) values ('$1#', true) returning id", [title]);
+}
 
-function 
-
-
+add('todos')
+    .then((data) => { console.log(data); })
+    .catch((error) => { console.log(error); });
 
 
 module.exports = {
