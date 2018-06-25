@@ -1,3 +1,5 @@
+// Comments under the functions show how to use the function
+
 
 const pgp = require('pg-promise')();
 const cn = {

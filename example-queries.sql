@@ -20,7 +20,7 @@ where isDone = false;
 select * from todos
 where title ilike '%zzzzzz%';
 
---Search by titlem should have three results 
+--Search by title should have three results 
 select * from todos
 where title ilike '%your%';
 
