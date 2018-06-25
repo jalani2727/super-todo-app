@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
+    "resetDB": "dropdb super-todo-app; createdb super-todo-app; psql -d super-todo-app -f schema.sql",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
