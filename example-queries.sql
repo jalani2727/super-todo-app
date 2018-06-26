@@ -1,3 +1,11 @@
+-- Add a new set of items to your table
+insert into todos
+(title, isdone)
+values 
+('Re-evaluate love life', false);
+
+
+
 -- All retrieval
 
 
@@ -34,3 +42,4 @@ delete from todos
 where isDone = true
 -- To see what you have left after deleting  
 select * from todos
+

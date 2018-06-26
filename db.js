@@ -77,7 +77,7 @@ function setTitle(id, newTitle) {
 //     .catch((error) => { console.log(error); });
  
 function add(title) {
-    return db.one("Insert into todos (title, isDone) values ('$1#', true) returning id", [title]);
+    return db.one("Insert into todos (title, isDone) values ('$1#', false) returning id", [title]);
 }
 
 
